@@ -104,7 +104,7 @@ public class TreeReverse {
                             leaveXoroRandom.skip(5);
                             for (int leave = 3; leave < 15; leave++) {
                                 int leaveData = tree[leave];
-                                if (leaveData != -1 && leaveRandom.nextInt(2) != leaveData) {
+                                if (leaveRandom.nextInt(2) != leaveData && leaveData != -1) {
                                     break treeCheckLoop;
                                 }
                             }
